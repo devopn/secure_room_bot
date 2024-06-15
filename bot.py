@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(level
 
 from config import config
 HOST = config.host
-bot = Bot(token="7248761303:AAGORKQbU3cV8jJCPPG7wyc-vGX3s1A-CFg")
+bot = Bot(token=config.key)
 dp = Dispatcher()
 dp.include_routers(command_router,notification_router,  menu_router, history_router, persons_router, model_handler)
 
